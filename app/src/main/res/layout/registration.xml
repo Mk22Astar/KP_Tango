@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fon"
+    tools:context=".Avtorizaciya">
+
+    <Button
+        android:id="@+id/btnInclud"
+        android:layout_width="258dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/rectangle_24"
+        android:onClick="onClick"
+        android:text="@string/Voiti"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:backgroundTint="#BF0D0D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTelephone"
+        android:layout_width="283dp"
+        android:layout_height="53dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="15dp"
+        android:importantForAccessibility="no"
+        android:hint="Введите номер телефона"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="287dp"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="number"
+        android:importantForAccessibility="no"
+        android:padding="15dp"
+        android:hint="Введите пароль"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.665" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:outlineSpotShadowColor="@color/fon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055"
+        app:srcCompat="@drawable/log" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="305dp"
+        android:layout_height="57dp"
+        android:text="@string/Privetstvie"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.367" />
+
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="143dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClickBack"
+        android:text="Назад    >"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInclud" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

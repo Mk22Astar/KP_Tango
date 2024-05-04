@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "691723716651",
+    "firebase_url": "https://tangostuduo-default-rtdb.firebaseio.com",
+    "project_id": "tangostuduo",
+    "storage_bucket": "tangostuduo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691723716651:android:f98284bb94b8767b39026e",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPQwjeHkBZwI-LrlVbgufw2ox-403juIQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

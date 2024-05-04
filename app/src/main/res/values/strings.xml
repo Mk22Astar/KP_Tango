@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name" translatable="false">pr_22_106_km</string>
+    <string name="menu" translatable="false">Меню</string>
+    <string name="abonementi" translatable="false">Абонементы</string>
+    <string name="prepodavateli" translatable="false">Преподаватели</string>
+    <string name="prepodName" translatable="false">Александра Александровна</string>
+    <string name="prepodinfo" translatable="false">Я этим занимаюсь\nТакой опыт работы люблю писать и читать\nКрестиком вышиваю\nВсех люблю и\nобнимаю!</string>
+    <string name="zanyatieTime" translatable="false">c 15:00 до 16:30</string>
+    <string name="zanyatieTip" translatable="false">Начинающая группа</string>
+    <string name="zanyatiePrepodName" translatable="false">Иван Иванкин\nАлександра Александрова</string>
+    <string name="Zapisatsya" translatable="false">Записаться</string>
+    <string name="Voiti" translatable="false">Войти</string>
+    <string name="Privetstvie" translatable="false">Добро пожаловать!</string>
+    <string name="Kontakti" translatable="false">Контакты</string>
+    <string name="Adres" translatable="false">Адрес: ул. Пушкина,\nдом 15 вход 1</string>
+    <string name="Telefon" translatable="false">Телефон: \n8-888-888-88-88</string>
+    <string name="Naiti" translatable="false">Как нас найти?</string>
+    <string name="SocSeti" translatable="false">Наши соц сети</string>
+    <string name="Voprosi" translatable="false">Остались вопросы? Звоните \nадминистратору: 8-888-888-88-88
+\nА также можете  написать нам в ВК или Whatsapp</string>
+    <string name="VidiAbonementov" translatable="false">Виды абонементов:\n \n
+        8 занятий   3500  (1 месяц)\n12 занятий   5500 (2 месяца)\n24 занятия    10 500 (3 месяца)</string>
+    <string name="selected_date">%1$s</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Open</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
