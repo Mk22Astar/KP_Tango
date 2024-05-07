@@ -8,30 +8,6 @@
     android:background="@color/fon"
     tools:showIn="layout/drawer_layout_id">
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/menu" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.375"
-        app:srcCompat="@drawable/zanyatie" />
-
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
@@ -40,153 +16,83 @@
         android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintVertical_bias="0.0" >
 
+    </androidx.viewpager.widget.ViewPager>
 
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="418dp"
-        android:layout_height="429dp"
-        android:layout_marginTop="51dp"
+    <ListView
+        android:id="@+id/list_raspisanie"
+        android:layout_width="408dp"
+        android:layout_height="449dp"
+        android:layout_marginTop="98dp"
+        android:background="@color/white"
+        android:dividerHeight="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView4">
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
-        <LinearLayout
-            android:layout_width="409dp"
-            android:layout_height="416dp"
-            android:layout_marginTop="2dp"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4">
-
-            <View
-                android:id="@+id/divider2"
-                android:layout_width="match_parent"
-                android:layout_height="20dp" />
-
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="match_parent"
-                android:layout_height="94dp"
-                android:text="Button"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:background="@drawable/rectangle_10_1"
-                app:backgroundTint="@color/white" />
-
-            <View
-                android:id="@+id/divider3"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:background="@color/fon" />
-
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="match_parent"
-                android:layout_height="94dp"
-                android:background="@drawable/rectangle_10_1"
-                android:text="Button"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                app:backgroundTint="@color/white" />
-
-            <View
-                android:id="@+id/divider4"
-                android:layout_width="match_parent"
-                android:layout_height="20dp" />
-
-            <Button
-                android:id="@+id/button7"
-                android:layout_width="match_parent"
-                android:layout_height="94dp"
-                android:background="@drawable/rectangle_10_1"
-                android:text="Button"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                app:backgroundTint="@color/white" />
-
-            <View
-                android:id="@+id/divider5"
-                android:layout_width="match_parent"
-                android:layout_height="20dp" />
-
-            <Button
-                android:id="@+id/button8"
-                android:layout_width="match_parent"
-                android:layout_height="94dp"
-                android:background="@drawable/rectangle_10_1"
-                android:text="Button"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                app:backgroundTint="@color/white" />
-
-        </LinearLayout>
-    </ScrollView>
-
-    <Button
-        android:id="@+id/btnMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@android:color/transparent"
-        android:text="@string/menu"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
-        app:layout_constraintEnd_toEndOf="@+id/imageView8"
-        app:layout_constraintHorizontal_bias="0.006"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.888" />
-
-    <ImageButton
-        android:id="@+id/btn_next"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:background="@drawable/strelka_prav"
-        android:importantForAccessibility="no"
-        app:backgroundTint="@color/white"
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="431dp"
+        android:layout_height="90dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.377" />
-
-
-
-    <ImageButton
-        android:id="@+id/btn_prev"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:background="@drawable/strelka_lev"
-        android:importantForAccessibility="no"
-        app:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.28"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.377" />
+        app:layout_constraintVertical_bias="0.313"
+        app:srcCompat="@drawable/zanyatie" />
 
     <TextView
         android:id="@+id/tvDate"
         android:layout_width="81dp"
         android:layout_height="39dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="16dp"
         android:text="16.01"
         android:textColor="@color/white"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView8"
-        app:layout_constraintVertical_bias="0.375" />
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.59" />
+
+    <ImageButton
+        android:id="@+id/btn_prev"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/strelka_lev"
+        android:importantForAccessibility="no"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.909" />
+
+    <ImageButton
+        android:id="@+id/btn_next"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/strelka_prav"
+        android:importantForAccessibility="no"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.779"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.909" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

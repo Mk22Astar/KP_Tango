@@ -6,12 +6,13 @@
     android:background="@color/fon">
 
     <TextView
+        android:id="@+id/txtheader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/menu"
-        android:textSize="30sp"
-        android:textColor="@color/white"/>
+        android:text="Меню"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
 
 
 </LinearLayout>

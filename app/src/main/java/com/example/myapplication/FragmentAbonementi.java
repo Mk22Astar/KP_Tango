@@ -1,5 +1,7 @@
 package com.example.myapplication;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -10,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -26,11 +29,9 @@ import android.widget.Toast;
 
 public class FragmentAbonementi extends Fragment {
 
-    private ListView listView;
-    private ArrayAdapter<String> adapter;
-    private List<String> listData;
+
     private DatabaseReference mDatabase;
-    private String USER_KEY = "User";
+    private ImageView vk,wathsapp;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -41,36 +42,28 @@ public class FragmentAbonementi extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        listView = view.findViewById(R.id.list_item);
-        listData = new ArrayList<>();
-        adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_list_item_1, listData);
-        mDatabase = FirebaseDatabase.getInstance().getReference(USER_KEY);
-        listView.setAdapter(adapter);
-        getDataFromBD();
-    }
-    private  void getDataFromBD(){
-        ValueEventListener vListener = new ValueEventListener() {
+        vk = view.findViewById(R.id.vk);
+        wathsapp = view.findViewById(R.id.wathsapp);
 
+        vk.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(listData.size() > 0)listData.clear();
-                for(DataSnapshot ds: snapshot.getChildren()){
-                    User user = ds.getValue(User.class);
-                    assert user != null;
-                    Log.w("teg1", user.Name + user.middleName + user.password + user.surname + user.telephone + " a");
-                    listData.add(user.Name);
-                    Toast.makeText(getContext(), "user.name", Toast.LENGTH_SHORT).show();
-                }
-                adapter.notifyDataSetChanged();
-
+            public void onClick(View v) {
+                Uri uriUrl = Uri.parse("https://vk.com/nuestraescuela");
+                    Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+                    startActivity(launchBrowser);
             }
+        });
 
+        wathsapp.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
+            public void onClick(View v) {
+                String url = "https://api.whatsapp.com/send?phone=89137987546";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
             }
-        };
-        mDatabase.addValueEventListener(vListener);
+        });
+
     }
 
 

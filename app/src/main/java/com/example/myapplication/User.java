@@ -1,19 +1,24 @@
 package com.example.myapplication;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class User {
-    public String Name, surname, middleName,telephone, password;
+    public String Name, Surname, MiddleName;
+    public Long Telephone, Password;
+//    public Map<String, String> ages = new HashMap<>();
 //    public var subscriptions;
 
     public User() {
     }
 
-    public User(String Name, String surname, String middleName, String telephone, String password) {
+    public User(String name, String surname, String middleName, Long telephone, Long password) {
 
-        this.Name = Name;
-        this.surname = surname;
-        this.middleName = middleName;
-        this.telephone = telephone;
-        this.password = password;
+        this.Name = name;
+        this.Surname = surname;
+        this.MiddleName = middleName;
+        this.Telephone = telephone;
+        this.Password = password;
 //        this.subscriptions = subscriptions;
     }
 }

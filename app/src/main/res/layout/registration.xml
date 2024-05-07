@@ -29,10 +29,10 @@
         android:layout_height="53dp"
         android:background="@color/white"
         android:ems="10"
+        android:hint="Введите номер телефона"
+        android:importantForAccessibility="no"
         android:inputType="number"
         android:padding="15dp"
-        android:importantForAccessibility="no"
-        android:hint="Введите номер телефона"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.483"
@@ -46,10 +46,10 @@
         android:layout_height="56dp"
         android:background="@color/white"
         android:ems="10"
-        android:inputType="number"
-        android:importantForAccessibility="no"
-        android:padding="15dp"
         android:hint="Введите пароль"
+        android:importantForAccessibility="no"
+        android:inputType="number"
+        android:padding="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.467"
@@ -97,6 +97,36 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnInclud" />
+
+    <TextView
+        android:id="@+id/error_telephone"
+        android:layout_width="291dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="19dp"
+        android:text="* Неверный номер телефона"
+        android:textColor="#FB3535"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtTelephone"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/error_password"
+        android:layout_width="291dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginBottom="26dp"
+        android:text="* Неверный пароль"
+        android:textColor="#FB3535"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnInclud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtPassword" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
